@@ -93,7 +93,6 @@ export const EbmProvider: React.FC<{ children: React.ReactNode }> = ({ children 
         servedBy,
       };
       setSales((prev) => [sale, ...prev]);
-      // Deduct stock
       setProducts((prev) =>
         prev.map((p) => {
           const ci = cart.find((c) => c.product.id === p.id);
